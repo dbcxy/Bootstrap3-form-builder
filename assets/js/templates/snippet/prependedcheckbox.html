@@ -1,0 +1,15 @@
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="control-label col-md-4"><%= label %></label>
+  <div class="col-md-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <label class="checkbox">
+          <input type="checkbox" <% if (checked){ %>checked="checked"<% } %>>
+        </label>
+      </span>
+      <input id="<%= id %>" name="<%= id %>" class="form-control input-lg" type="text" placeholder="<%= placeholder %>" <% if(required) {%> required <% } %> />
+    </div>
+    <% if (helptext.length > 0) { %><p class="help-block"><%= helptext %></p><% } %>
+  </div>
+</div>

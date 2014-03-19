@@ -1,0 +1,11 @@
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="control-label col-md-4"><%= label %></label>
+  <div class="col-md-6">
+    <div class="input-group">
+      <input id="<%= id %>" name="<%= id %>" class="form-control" placeholder="<%= placeholder %>" type="text"<% if(required) {%> required <% } %> />
+      <span class="input-group-addon"><%= append %></span>
+    </div>
+    <% if (helptext.length > 0) { %><p class="help-block"><%= helptext %></p><% } %>
+  </div>
+</div>

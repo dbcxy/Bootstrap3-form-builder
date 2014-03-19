@@ -1,0 +1,8 @@
+<!-- Text input-->
+<div class="form-group">
+  <label class="control-label col-md-4"><%= label %></label>
+  <div class="col-md-6">
+    <input id="<%= id %>" name="<%= id %>" type="text" placeholder="<%= placeholder %>" class="form-control input-xlarge" <% if(required) {%> required <% } %> />
+    <% if (helptext.length > 0) { %><span class="help-block"><%= helptext %></span><% } %>
+  </div>
+</div>

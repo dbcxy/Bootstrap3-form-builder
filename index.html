@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Form Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="javascript:void(0);">表单设计器</a>
+			</div>
+		</div>
+	</nav>
+      <div class="row clearfix">
+        <!-- Building Form. -->
+        <div class="col-md-6">
+          <div class="clearfix">
+            <h2>Your Form</h2>
+            <hr>
+            <div id="build">
+              <form id="target" class="form-horizontal">
+              	<div class="form-body"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- / Building Form. -->
+
+        <!-- Components -->
+        <div class="col-md-6">
+          <h2>Drag & Drop components</h2>
+          <hr>
+          <div class="tabbable">
+            <ul class="nav nav-tabs" id="navtab">
+              <!-- Tab nav -->
+            </ul>
+            <form class="form-horizontal" id="components">
+              <div class="form-body">
+                <div class="tab-content">
+                  <!-- Tabs of snippets go here -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- / Components -->
+
+      </div>
+
+      <div class="row clearfix">
+        <div class="col-md-12">
+          <hr id="ca">
+         这是一段版权描述
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    <script data-main="assets/js/main-built.js" src="assets/js/lib/require.js" ></script>
+	</body>
+</html>
+    
+    	

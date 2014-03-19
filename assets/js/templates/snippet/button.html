@@ -1,0 +1,7 @@
+<!-- Button -->
+<div class="form-group">
+  <label class="control-label col-md-4"><%= label %></label>
+  <div class="col-md-6">
+    <button id="<%= id %>" name="<%= id %>" class='btn <%= _.find(buttontype, function(o){return o.selected})["value"] %>'><%= buttonlabel %></button>
+  </div>
+</div>
